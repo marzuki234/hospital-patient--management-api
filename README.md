@@ -166,6 +166,7 @@ Method:POST
 Output format:JSON
 
 input:
+
 {
   "firstName": "2mohd",
   "lastName": "7zulkifli",
@@ -174,6 +175,7 @@ input:
   "email": "marzuki@lapasar.com",
   "address": "saja",
   "emergencyContact": "60125544333",
+		"bloodType": "B_POSITIVE",
   "isActive": true
 }
 Output:
@@ -197,16 +199,18 @@ Output format:JSON
 
 input:
 
+
 {
   "id": 1,
-  "firstName": "aa",
+  "firstName": "vb",
   "lastName": "B",
 	"phoneNumber": "0125544111",
 	"email": "a@a.com",
 	  "address": "saja",
 	  "emergencyContact": "ali 0123322212",
 	  "isActive": true,
-	"dateOfBirth": "1985-08-11T17:44:31.154"
+	"dateOfBirth": "1985-08-11T17:44:31.154",
+	"bloodType": "A_POSITIVE"
 	  
 	
 
