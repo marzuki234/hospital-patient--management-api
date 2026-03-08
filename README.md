@@ -10,6 +10,9 @@ Steps to ON server spring boot 2.5:
  mvn clean spring-boot:run
 
 
+now apache is up.can access 
+
+
 List API endpoint url:
 1.http://localhost:8080/api/pesakit(lists all patients)
 Method:GET
