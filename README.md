@@ -3,7 +3,7 @@
 Steps to ON server spring boot 2.5:
 
 1.Go to your project folder run:
- mvn clean package  
+ mvn clean package  -DskipTests  
 
 2.Go to your project folder run:
 

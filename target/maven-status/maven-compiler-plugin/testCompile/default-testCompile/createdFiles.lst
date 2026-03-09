@@ -1,4 +1,5 @@
-com/mycompany/springrestmysql/service/PatientServiceImplTest.class
-com/mycompany/springrestmysql/service/PatientServiceIT$PatientServiceImpl.class
-com/mycompany/springrestmysql/service/PatientServiceIT.class
+com/mycompany/springrestmysql/service/PatientServiceNGTest$PatientServiceImpl.class
+com/mycompany/springrestmysql/service/PatientServiceNGTest.class
+com/mycompany/springrestmysql/service/LogServiceNGTest$LogServiceImpl.class
+com/mycompany/springrestmysql/service/LogServiceNGTest.class
 com/mycompany/springrestmysql/SpringRestMysqlApplicationTests.class

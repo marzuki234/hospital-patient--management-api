@@ -11,6 +11,7 @@ com/mycompany/springrestmysql/dto/CreatePatient.class
 com/mycompany/springrestmysql/load/LoadPatientDatabase.class
 com/mycompany/springrestmysql/exception/LogNotFoundException.class
 com/mycompany/springrestmysql/exception/PatientNotFoundException.class
+.netbeans_automatic_build
 com/mycompany/springrestmysql/repository/LogRepository.class
 com/mycompany/springrestmysql/service/LogServiceImpl.class
 ErrorResponse.class
