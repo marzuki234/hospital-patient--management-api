@@ -1,4 +1,4 @@
-# Spring Boot RESTful CRUD API Example with MySQL Database
+# Spring Boot RESTful CRUD API Example with MySQL Database (ahmad.marzuki@gmail.com)
 
 Steps to ON server spring boot 2.5:
 
