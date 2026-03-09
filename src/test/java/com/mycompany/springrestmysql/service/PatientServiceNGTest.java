@@ -5,47 +5,40 @@
  */
 package com.mycompany.springrestmysql.service;
 
-import com.mycompany.springrestmysql.controller.PatientController;
 import com.mycompany.springrestmysql.model.Patient;
 import java.util.List;
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
-import static org.junit.Assert.*;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import lombok.extern.slf4j.Slf4j;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import static org.testng.Assert.*;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
-@Slf4j
-public class PatientServiceIT {
-      private static final Logger logger = LogManager.getLogger(PatientController.class);
-    public PatientServiceIT() {
-    }
+/**
+ *
+ * @author user
+ */
+public class PatientServiceNGTest {
     
+    public PatientServiceNGTest() {
+    }
+
     @BeforeClass
-    public static void setUpClass() {
-        System.err.println("xxxxxx");
-        System.out.flush();
-        logger.warn("testlahBeforeClass");
+    public static void setUpClass() throws Exception {
     }
-    
+
     @AfterClass
-    public static void tearDownClass() {
-        logger.warn("testlahAfterClass");
+    public static void tearDownClass() throws Exception {
     }
-    
-    @Before
-    public void setUp() {
-        logger.warn("testlahBefore");
+
+    @BeforeMethod
+    public void setUpMethod() throws Exception {
     }
-    
-    @After
-    public void tearDown() {
-        logger.warn("testlahAfter");
+
+    @AfterMethod
+    public void tearDownMethod() throws Exception {
     }
 
     /**
@@ -53,14 +46,11 @@ public class PatientServiceIT {
      */
     @Test
     public void testGetPatients() {
-      
-         logger.warn("testlah");
         System.out.println("getPatients");
         PatientService instance = new PatientServiceImpl();
-        List<Patient> expResult = null;
-        List<Patient> result = instance.getPatients();
-        assertEquals(expResult, result);
-         logger.warn("resulttestlah"+expResult+"--"+result);
+        List expResult = null;
+        List result = instance.getPatients();
+        assertEquals(result, expResult);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
@@ -70,13 +60,12 @@ public class PatientServiceIT {
      */
     @Test
     public void testGetPatient() {
-        log.info("marzukitest");
         System.out.println("getPatient");
         Long id = null;
         PatientService instance = new PatientServiceImpl();
         Patient expResult = null;
         Patient result = instance.getPatient(id);
-        assertEquals(expResult, result);
+        assertEquals(result, expResult);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
@@ -89,9 +78,9 @@ public class PatientServiceIT {
         System.out.println("findByFirstName");
         String firstName = "";
         PatientService instance = new PatientServiceImpl();
-        List<Patient> expResult = null;
-        List<Patient> result = instance.findByFirstName(firstName);
-        assertEquals(expResult, result);
+        List expResult = null;
+        List result = instance.findByFirstName(firstName);
+        assertEquals(result, expResult);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
@@ -106,7 +95,7 @@ public class PatientServiceIT {
         PatientService instance = new PatientServiceImpl();
         Patient expResult = null;
         Patient result = instance.savePatient(patient);
-        assertEquals(expResult, result);
+        assertEquals(result, expResult);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
@@ -132,9 +121,9 @@ public class PatientServiceIT {
         System.out.println("findPatientsPaginatedAndSorted");
         Pageable pageable = null;
         PatientService instance = new PatientServiceImpl();
-        Page<Patient> expResult = null;
-        Page<Patient> result = instance.findPatientsPaginatedAndSorted(pageable);
-        assertEquals(expResult, result);
+        Page expResult = null;
+        Page result = instance.findPatientsPaginatedAndSorted(pageable);
+        assertEquals(result, expResult);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }

@@ -206,8 +206,9 @@ The singleton design pattern to assure one instance of class exist at one time i
         log.setLastName(createPatient.toString());
         log.setCreatedAt(now);
         logService.saveLog(log);
+        //patientService.savePatient(patient);
         return patientService.savePatient(patient);
-        //return new ResponseEntity<>(Patient, HttpStatus.BAD_REQUEST);
+        //return new ResponseEntity<>(Log, HttpStatus.BAD_REQUEST);
 
     }
 
