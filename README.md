@@ -307,6 +307,48 @@ integration test(JUNIT4 test)
 /springboot-rest-mysql/src/test/java/com/mycompany/springrestmysql/service/PatientServiceIT.java
 
 
+full screenshot:
+
+image.png
+insert patient
+
+image.png
+edit patient
+
+image.png
+paging and sort
+
+image.png
+searh patient
+
+image.png
+soft delete pesakit
+
+image.png
+data pesakit by id
+
+image.png
+ log audit pesakit(insert,update,delete apa)
+
+
+
+image.png
+"openapi": "3.0.3
+
+image.png
+swagger API documentation
+ 
+image.png
+phone no validation put incorrect format 0125544111xx (400 bad request)
+
+image.png
+email no validation put incorrect format a (400 bad request)
+
+ 
+integration test:
+image.png
+
+image.png
 
 
 
