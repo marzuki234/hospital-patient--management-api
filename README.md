@@ -13,7 +13,15 @@ Steps to ON server spring boot 2.5:
 now apache is up.can access 
 
 
+
+
+
+
 List API endpoint url:
+
+
+
+
 1.http://localhost:8080/api/pesakit(lists all patients)
 Method:GET
 Output format:JSON
@@ -35,6 +43,10 @@ output:[
   }
 ]
 
+
+
+
+
 2.http://localhost:8080/log/log(lists all logs audit trail)
 Method:GET
 Output format:JSON
@@ -47,6 +59,10 @@ output:[
     "createdAt": "2026-03-08T00:53:58.789"
   }
 ]
+
+
+
+
 3.http://localhost:8080/api/pesakit/by-name?firstName=ahmad (search Nama pesakit)
 Method:GET
 Output format:JSON
@@ -59,6 +75,10 @@ output:[
     "createdAt": "2026-03-08T00:53:58.789"
   }
 ]
+
+
+
+
 4.http://localhost:8080/api/pesakit/pageAndSortPesakit?page=0&size=5&sortBy=email&sortDirection=desc (lists all patients ada paging dan bleh sort)
 Method:GET
 Output format:JSON
@@ -164,6 +184,10 @@ output:
   "empty": false
 }
 
+
+
+
+
 5.http://localhost:8080/api/pesakit (insert new patients)
 Method:POST
 Output format:JSON
@@ -196,6 +220,10 @@ Output:
   "createdAt": "2026-03-08T00:53:58.789",
   "updatedAt": null
 }
+
+
+
+
 6.http://localhost:8080/api/pesakits/1 (kemaskini patients)
 Method:PUT
 Output format:JSON
@@ -235,6 +263,10 @@ Output:
 }
 
 
+
+
+
+
 7.http://localhost:8080/api/pesakits/1 (soft delete patients)
 Method:DELETE
 Output format:JSON
@@ -264,6 +296,9 @@ Output:
   "createdAt": "2026-03-07T13:19:29.371",
   "updatedAt": "2026-03-07T13:19:29.371"
 }
+
+
+
 
 
 8.http://localhost:8080/api/pesakit/1 (data patients by ID)
